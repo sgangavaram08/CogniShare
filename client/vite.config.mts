@@ -1,3 +1,4 @@
+
 import react from "@vitejs/plugin-react"
 import { fileURLToPath, URL } from "url"
 import { defineConfig } from "vite"
@@ -30,9 +31,10 @@ export default defineConfig({
         ],
     },
     preview: {
-        port: 5173
+        port: 8080
     },
     server:{
+        port: 8080,
         open: true,
     }
 })
