@@ -1,3 +1,4 @@
+
 import { Socket } from "socket.io"
 
 type SocketId = string
@@ -26,6 +27,14 @@ enum SocketEvent {
 	REQUEST_DRAWING = "request-drawing",
 	SYNC_DRAWING = "sync-drawing",
 	DRAWING_UPDATE = "drawing-update",
+	CODE_FREEZE_UPDATE = "code-freeze-update",
+    VERSION_CREATED = "version-created",
+    VERSION_SWITCHED = "version-switched",
+    VERSION_DELETED = "version-deleted",
+    TEST_GENERATED = "test-generated",
+    TEST_RUN = "test-run",
+    TEST_RESULT = "test-result",
+    AUTH_STATUS = "auth-status"
 }
 
 interface SocketContext {

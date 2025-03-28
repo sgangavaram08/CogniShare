@@ -1,3 +1,4 @@
+
 import { Socket } from "socket.io-client"
 
 type SocketId = string
@@ -41,4 +42,4 @@ interface SocketContext {
     socket: Socket
 }
 
-export { SocketEvent, SocketContext, SocketId }
+export type { SocketContext, SocketId }
