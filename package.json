@@ -1,0 +1,26 @@
+
+{
+  "name": "code-sync",
+  "version": "1.0.0",
+  "description": "Real-time collaborative coding platform",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "docker-compose up",
+    "dev": "docker-compose up",
+    "build": "docker-compose build",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "code-sync",
+    "collaborative-coding",
+    "real-time"
+  ],
+  "author": "",
+  "license": "ISC"
+}
